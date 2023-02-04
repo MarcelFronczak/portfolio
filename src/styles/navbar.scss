@@ -1,0 +1,225 @@
+@use './colors.scss' as *;
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    padding: 0.8rem 1rem;
+    z-index: 2;
+
+    .nav-content {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        width: 100%;
+        z-index: 2;
+    }
+
+    .menu-btn {
+        width: 24px;
+        height: 24px;
+        background-color: transparent;
+        border: none;
+        font-size: 24px;
+        text-align: left;
+        cursor: pointer;
+        z-index: 2;
+    }
+
+    .xmark {
+        font-size: 28px;
+    }
+
+    ul {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        top: 3rem;
+        left: -100%;
+        width: 100%;
+        list-style: none;
+        padding: 2rem 2.5rem;
+        z-index: 1;
+        transition: all 0.26s ease;
+    }
+
+    li {
+        position: relative;
+        margin-bottom: 1rem;
+        font-weight: 400;
+        font-size: 14px;
+        cursor: pointer;
+    }
+
+    ul.open {
+        left: 0;
+    }
+
+    li::before {
+        content: '';
+        position: absolute;
+        width: 2px;
+        height: 14px;
+        top: 3px;
+        left: -10px;
+    }
+
+    .toggle-btn {
+        display: flex;
+    }
+
+    input {
+        width: 0;
+        height: 0;
+        visibility: hidden;
+    }
+
+    input:checked + label::after {
+        right: 21px;
+        transform: translateX(-100%);
+    }
+
+    label {
+        width: 60px;
+        height: 26px;
+        position: relative;
+        display: block;
+        border-radius: 50px;
+        cursor: pointer;
+    }
+
+    label::after {
+        content: '';
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        top: 3px;
+        right: 3px;
+        border-radius: 50%;
+        transition: all 0.22s ease;
+    }
+
+    .moon {
+        position: absolute;
+        left: 8px;
+        top: 4px;
+        color: $accent-red-dark-theme;
+        font-size: 15px;
+    }
+
+    .sun {
+        position: absolute;
+        right: 6px;
+        top: 4px;
+        color: $accent-red-light-theme;
+        font-size: 14px;
+    }
+
+}
+
+nav.dark {
+    background: $primary-dark-theme;
+
+    .menu-btn {
+        color: $accent-red-dark-theme;
+    }
+
+    ul {
+        background: $background-gradient-dark-theme;
+        color: $text-primary-dark-theme
+    }
+
+    .menu-web {
+        background: transparent;
+        li::after {
+            background-color: $accent-red-dark-theme;
+        }
+    }
+
+    li::before {
+        background-color: $accent-red-dark-theme;
+    }
+
+    label {
+        background-color: $primary-dark-theme;
+        border: 2px solid $text-primary-dark-theme;
+    }
+
+    label::after {
+        background-color: $text-primary-dark-theme;
+    }
+    
+}
+nav.light {
+    background: $primary-light-theme;
+
+    .menu-btn {
+        color: $accent-red-light-theme;
+    }
+
+    ul {
+        background: $background-gradient-light-theme;
+        color: $text-primary-light-theme
+    }
+    .menu-web {
+        background: transparent;
+        li::after {
+            background-color: $accent-red-light-theme;
+        }
+    }
+    li::before {
+        background-color: $accent-red-light-theme;
+    }
+
+    label {
+        background-color: $primary-light-theme;
+        border: 2px solid $text-primary-light-theme;
+    }
+
+    label::after {
+        background-color: $text-primary-light-theme;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .menu-btn {
+        display: none;
+    }
+
+    nav {
+        padding-inline: 8vw; 
+    }
+
+    .menu-web {
+        position: static;
+        flex-direction: row;
+        align-items: center;
+        padding: 0;
+
+        li {
+            margin: 0 2rem 0 0;
+        }
+
+        li::before {
+            display: none;
+        }
+
+        li::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            left: 0;
+            bottom: -2px;
+            transition: all 0.22s;
+        }
+
+        li:hover::after {
+            width: 100%;
+        }
+    }
+
+    
+}

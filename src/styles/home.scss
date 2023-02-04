@@ -1,0 +1,58 @@
+@use './colors.scss' as *;
+
+section {
+    height: 100vh;
+    width: 100%;
+    padding: 10rem 8vw;
+
+    h1 {
+        font-weight: 500;
+        font-size: 34px;
+        margin-bottom: 1rem;
+    }
+
+    span {
+        font-size: 42px;
+    }
+
+    p {
+        font-size: 18px;
+        font-weight: 400;
+    }
+}
+
+section.dark {
+    background: $background-gradient-dark-theme;
+
+    h1 {
+        color: $text-primary-dark-theme;
+    }
+
+    span {
+        background: -webkit-linear-gradient(66deg, #C20E0E 0%, #E04B1C 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    p {
+        color: $text-secondary-dark-theme;
+    }
+}
+
+section.light {
+    background: $background-gradient-light-theme;
+
+    h1 {
+        color: $text-primary-light-theme;
+    }
+
+    span {
+        background: -webkit-linear-gradient(66deg, #CA0D0D 0%, #F55F30 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    p {
+        color: $text-secondary-light-theme;
+    }
+}
