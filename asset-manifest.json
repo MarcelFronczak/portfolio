@@ -1,17 +1,20 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.ea1ff4e5.css",
-    "main.js": "/portfolio/static/js/main.f5711c3c.js",
+    "main.css": "/portfolio/static/css/main.bdccea0a.css",
+    "main.js": "/portfolio/static/js/main.17853c33.js",
+    "static/media/project-2-dark.png": "/portfolio/static/media/project-2-dark.616f60e2ec592b022247.png",
+    "static/media/project-2-light.png": "/portfolio/static/media/project-2-light.bc3235d106506b9de9b5.png",
     "static/media/project-1-dark.png": "/portfolio/static/media/project-1-dark.ad2ba0d28f61740aa8b3.png",
+    "static/media/project-1-light.png": "/portfolio/static/media/project-1-light.1613847702d109e3ec7d.png",
     "static/media/M-Fronczak-CV.pdf": "/portfolio/static/media/M-Fronczak-CV.8f921baba921ae32b6da.pdf",
     "static/media/Avatar-light.jpg": "/portfolio/static/media/Avatar-light.7674f609c516d699b22e.jpg",
     "static/media/Avatar-dark.jpg": "/portfolio/static/media/Avatar-dark.64e5c7e8ded5183963a0.jpg",
     "index.html": "/portfolio/index.html",
-    "main.ea1ff4e5.css.map": "/portfolio/static/css/main.ea1ff4e5.css.map",
-    "main.f5711c3c.js.map": "/portfolio/static/js/main.f5711c3c.js.map"
+    "main.bdccea0a.css.map": "/portfolio/static/css/main.bdccea0a.css.map",
+    "main.17853c33.js.map": "/portfolio/static/js/main.17853c33.js.map"
   },
   "entrypoints": [
-    "static/css/main.ea1ff4e5.css",
-    "static/js/main.f5711c3c.js"
+    "static/css/main.bdccea0a.css",
+    "static/js/main.17853c33.js"
   ]
 }
