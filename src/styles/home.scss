@@ -3,12 +3,12 @@
 .home {
     height: 100vh;
     width: 100%;
-    padding: 10rem 10vw;
+    padding: 8rem 10vw;
     overflow: hidden;
 
     .content-wrap {
         display: grid;
-        grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+        grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
         gap: 5rem;
     }
 
@@ -169,7 +169,7 @@
 }
 
 @media screen and (min-width: 1220px) {
-    section {
+    .home {
         padding: 13rem 14vw;
     }
 

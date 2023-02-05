@@ -2,11 +2,52 @@
 
 .skills {
     width: 100%;
-    padding: 4.5rem 10vw;
-    overflow: hidden;
+    padding: 4.5rem 8vw;
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    .content-wrap {
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(280px, 1fr));
+        gap: 3rem;
+    }
+
+    .flex-wrap {
+        display: flex;
+        align-items: center;
+    }
+
+    .tech-stack-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 14px;
+        justify-content: flex-start;
+    }
+
+    .tech-stack-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 30px;
+        padding: 0 10px;
+        font-family: 'Roboto Mono', monospace;
+        cursor: default;
+
+        p {
+            font-family: 'Roboto Mono', monospace;
+        }
+    }
+
+    .tech-stack-content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 6px;
+    }
 
     h3 {
         font-size: 26px;
@@ -25,11 +66,11 @@
     }
 
     p {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .bolder {
-        font-size: 20px;
+        font-size: 19px;
         font-weight: 500;
     }
 }
@@ -48,6 +89,15 @@
     p {
         color: $text-secondary-dark-theme;
     }
+
+    .tech-stack-btn {
+        background-color: $icon-bg-dark-theme;
+        box-shadow: $shadow-dark-theme;
+        color: $icon-text-dark-theme;
+        p {
+            color: $icon-text-dark-theme;
+        }
+    }
 }
 
 .skills.light {
@@ -64,4 +114,26 @@
     p {
         color: $text-secondary-light-theme;
     }
+
+    .tech-stack-btn {
+        background-color: $icon-bg-light-theme;
+        box-shadow: $shadow-light-theme;
+        color: $icon-text-light-theme;
+        p {
+            color: $icon-text-light-theme;
+        }
+    }
+}
+
+@media screen and (min-width: 1150px) {
+    .skills {
+        padding: 4.5rem 2vw !important;
+
+        .content-wrap {
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(345px, 1fr)) !important;
+            gap: 5rem;
+        }
+    }
+    
 }
