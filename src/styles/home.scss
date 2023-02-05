@@ -19,6 +19,33 @@ section {
         font-size: 18px;
         font-weight: 400;
     }
+
+    .gradient-wrap {
+        width: 106px;
+        height: 40px;
+        padding: 1px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 2px;
+        margin-top: 1.5rem;
+    }
+
+    .resume-btn {
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        line-height: 8px;
+        gap: 6px;
+    }
+
+    .file-icon {
+        opacity: 0.85;
+    }
 }
 
 section.dark {
@@ -37,6 +64,19 @@ section.dark {
     p {
         color: $text-secondary-dark-theme;
     }
+
+    .gradient-wrap {
+        background: $gradient-red-dark-theme;
+    }
+
+    .resume-btn {
+        background: $background-gradient-dark-theme;
+        color: $accent-red-dark-theme;
+    }
+
+    .file-icon {
+        color: #E04B1C;
+    }
 }
 
 section.light {
@@ -54,5 +94,18 @@ section.light {
 
     p {
         color: $text-secondary-light-theme;
+    }
+
+    .gradient-wrap {
+        background: $gradient-red-light-theme;
+    }
+
+    .resume-btn {
+        background: $background-gradient-light-theme;
+        color: $accent-red-light-theme;
+    }
+
+    .file-icon {
+        color: #F55F30;
     }
 }

@@ -134,7 +134,7 @@ nav.dark {
     .menu-web {
         background: transparent;
         li::after {
-            background-color: $accent-red-dark-theme;
+            background: $gradient-red-dark-theme;
         }
     }
 
@@ -166,7 +166,7 @@ nav.light {
     .menu-web {
         background: transparent;
         li::after {
-            background-color: $accent-red-light-theme;
+            background: $gradient-red-light-theme;
         }
     }
     li::before {
