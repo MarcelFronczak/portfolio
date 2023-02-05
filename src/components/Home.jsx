@@ -13,7 +13,8 @@ function Home() {
     <section className={'home ' + theme} id='home'>
       <div className='content-wrap'>
         <div className='header-container'>
-            <h1>Hi, I'm<br></br><span className='h-span'>Marcel Fronczak</span></h1>
+            <h1>Hi, I'm</h1>
+            <h1 className='name'><span className='h-span'>Marcel Fronczak</span></h1>
             <p>Junior Frontend Developer</p>
             <div className='gradient-wrap'>
               <a href={resume} download='M-Fronczak-CV.pdf' className='resume-btn'>
