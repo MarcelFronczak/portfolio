@@ -10,7 +10,7 @@ function Skills() {
     <section className={'skills ' + theme} id='skills'>
       <h3>SKILLS</h3>
       <div className='content-wrap'>
-        <p>These are the main technologies I’ve been using over the last year.<br></br>In the near future I’m planning to learn <span className='bolder'>Typescript</span> and <span className='bolder'>Node.js</span>.</p>
+        <p>These are the main technologies I’ve been using over the last year.<br></br><br></br>In the near future I’m planning to learn <span className='bolder'>Typescript</span> and <span className='bolder'>Node.js</span>.</p>
         <div className='flex-wrap'>
           <div className='tech-stack-container'>
             <div className='tech-stack-btn'>

@@ -45,7 +45,7 @@ function Projects() {
             </div>
 
           <div className="description">
-            <p>Functions:</p>
+            <p className='ul-label'>Functions:</p>
             <ul>
               <li>API to provide job and company listings</li>
               <li>Offers filtering through searchbar</li>
@@ -55,7 +55,7 @@ function Projects() {
             </ul>
           </div>
           <div className="description">
-            <p>Functions to be added:</p>
+            <p className='ul-label'>Functions to be added:</p>
             <ul>
               <li>Firebase Realtime Databse to store saved offers</li>
               <li>Category filter</li>
