@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.68fd7f68.css",
-    "main.js": "/portfolio/static/js/main.3bfbe50d.js",
+    "main.css": "/portfolio/static/css/main.dc804a7d.css",
+    "main.js": "/portfolio/static/js/main.80afc10d.js",
     "static/media/M-Fronczak-CV.pdf": "/portfolio/static/media/M-Fronczak-CV.8f921baba921ae32b6da.pdf",
     "static/media/Avatar-light.jpg": "/portfolio/static/media/Avatar-light.7674f609c516d699b22e.jpg",
     "static/media/Avatar-dark.jpg": "/portfolio/static/media/Avatar-dark.64e5c7e8ded5183963a0.jpg",
     "index.html": "/portfolio/index.html",
-    "main.68fd7f68.css.map": "/portfolio/static/css/main.68fd7f68.css.map",
-    "main.3bfbe50d.js.map": "/portfolio/static/js/main.3bfbe50d.js.map"
+    "main.dc804a7d.css.map": "/portfolio/static/css/main.dc804a7d.css.map",
+    "main.80afc10d.js.map": "/portfolio/static/js/main.80afc10d.js.map"
   },
   "entrypoints": [
-    "static/css/main.68fd7f68.css",
-    "static/js/main.3bfbe50d.js"
+    "static/css/main.dc804a7d.css",
+    "static/js/main.80afc10d.js"
   ]
 }
