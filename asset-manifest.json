@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.57552829.css",
-    "main.js": "/portfolio/static/js/main.c6629238.js",
+    "main.css": "/portfolio/static/css/main.11e99638.css",
+    "main.js": "/portfolio/static/js/main.fd202373.js",
+    "static/media/M-Fronczak-CV.pdf": "/portfolio/static/media/M-Fronczak-CV.8f921baba921ae32b6da.pdf",
     "index.html": "/portfolio/index.html",
-    "main.57552829.css.map": "/portfolio/static/css/main.57552829.css.map",
-    "main.c6629238.js.map": "/portfolio/static/js/main.c6629238.js.map"
+    "main.11e99638.css.map": "/portfolio/static/css/main.11e99638.css.map",
+    "main.fd202373.js.map": "/portfolio/static/js/main.fd202373.js.map"
   },
   "entrypoints": [
-    "static/css/main.57552829.css",
-    "static/js/main.c6629238.js"
+    "static/css/main.11e99638.css",
+    "static/js/main.fd202373.js"
   ]
 }
