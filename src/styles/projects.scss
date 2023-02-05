@@ -2,7 +2,7 @@
 
 .projects {
     width: 100%;
-    padding: 4.5rem 10vw;
+    padding: 6rem 10vw 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -27,6 +27,7 @@
         display: flex;
         flex-direction: column;
         gap: 2rem;
+        margin-bottom: 8rem;
 
         .col {
             flex: 1;
@@ -222,6 +223,10 @@
     .projects {
         .project {
             flex-direction: row;
+        }
+
+        .project-2 {
+            flex-direction: row-reverse;
         }
     }
 }
