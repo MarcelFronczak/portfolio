@@ -41,10 +41,12 @@ section {
         text-decoration: none;
         line-height: 8px;
         gap: 6px;
+        transition: all 0.17s ease;
     }
 
     .file-icon {
         opacity: 0.85;
+        transition: all 0.17s ease;
     }
 }
 
@@ -72,10 +74,20 @@ section.dark {
     .resume-btn {
         background: $background-gradient-dark-theme;
         color: $accent-red-dark-theme;
+
     }
 
     .file-icon {
         color: #E04B1C;
+    }
+
+    .resume-btn:hover {
+        background: transparent;
+        color: #ccc;
+        .file-icon {
+            color: #ccc;
+            opacity: 1;
+        }
     }
 }
 
@@ -107,5 +119,14 @@ section.light {
 
     .file-icon {
         color: #F55F30;
+    }
+
+    .resume-btn:hover {
+        background: transparent;
+        color: #ddd;
+        .file-icon {
+            color: #ddd;
+            opacity: 1;
+        }
     }
 }
