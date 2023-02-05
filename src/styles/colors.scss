@@ -1,9 +1,9 @@
 
 $primary-dark-theme: #2D2D2D;
-$primary-light-theme: #D7D7D7;
+$primary-light-theme: #E4E4E4;
 
 $background-gradient-dark-theme: linear-gradient(180deg, #2D2D2D 0%, #323232 100%);
-$background-gradient-light-theme: linear-gradient(180deg, #D7D7D7 0%, #DFDFDF 100%);
+$background-gradient-light-theme: linear-gradient(180deg, #E4E4E4 0%, #efefef 100%);
 
 $gradient-red-dark-theme: linear-gradient(66deg, #C20E0E 0%, #E04B1C 100%);
 $gradient-red-light-theme: linear-gradient(66deg, #CA0D0D 0%, #F55F30 100%);
@@ -22,3 +22,6 @@ $icon-bg-light-theme: #E2E2E2;
 
 $icon-text-dark-theme: #ABABAB;
 $icon-text-light-theme: #535353;
+
+$shadow-dark-theme: 1px 1px 17px -7px rgba(21, 21, 21, 1);
+$shadow-light-theme: 1px 1px 17px -7px rgba(67, 67, 67, 1);

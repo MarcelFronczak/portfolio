@@ -114,7 +114,7 @@ section.dark {
     }
 
     img {
-        box-shadow: 1px 1px 17px -7px rgba(21, 21, 21, 1);
+        box-shadow: $shadow-dark-theme;
     }
 }
 
@@ -150,15 +150,15 @@ section.light {
 
     .resume-btn:hover {
         background: transparent;
-        color: #ddd;
+        color: #dfdfdf;
         .file-icon {
-            color: #ddd;
+            color: #dfdfdf;
             opacity: 1;
         }
     }
 
     img {
-        box-shadow: 1px 1px 17px -7px rgba(67, 67, 67, 1);
+        box-shadow: $shadow-light-theme;
     }
 }
 
