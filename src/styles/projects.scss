@@ -1,0 +1,227 @@
+@use './colors.scss' as *;
+
+.projects {
+    width: 100%;
+    padding: 4.5rem 10vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h3 {
+        font-size: 26px;
+        font-weight: 400;
+        position: relative;
+        margin-bottom: 5rem;
+    }
+
+    h3::after {
+        content: '';
+        position: absolute;
+        width: 80%;
+        height: 4px;
+        bottom: -5px;
+        left: 10%;
+    }
+
+    .project {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        .col {
+            flex: 1;
+
+            img {
+                width: 100% !important;
+                height: auto !important;
+            }
+        }
+
+        .col1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex: 2;
+            width: 100%;
+        }
+
+        .col2 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        h4 {
+            font-size: 20px;
+            font-weight: 400;
+            margin-bottom: 1rem;
+        }
+
+        .tech-container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 14px;
+            justify-content: flex-start;
+            margin-bottom: 1.5rem;
+        }
+    
+        .tech-stack-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 30px;
+            padding: 0 10px;
+            font-family: 'Roboto Mono', monospace;
+            cursor: default;
+    
+            p {
+                font-family: 'Roboto Mono', monospace;
+            }
+        }
+
+        .tech-stack-content {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            gap: 6px;
+        }
+
+        .description {
+            margin-bottom: 12px;
+        }
+        
+        ul {
+           margin-left: 20px; 
+
+           li {
+            margin-bottom: 6px;
+            font-family: 'Poppins', sans-serif;
+           }
+        }
+
+        .cta-buttons {
+            margin-top: 1rem;
+        }
+
+        .cta-page, .cta-code {
+            text-decoration: none;
+            margin-right: 16px;
+            padding: 6px 10px;
+            font-weight: 400;
+            border-radius: 2px;
+            text-align: center;
+            transition: all 0.15s;
+        }
+
+        .cta-page:hover {
+            opacity: 0.91;
+        }
+    }
+}
+
+
+.projects.dark {
+    background: $background-gradient-dark-theme;
+
+    h3, h4 {
+        color: $text-primary-dark-theme;
+    }
+
+    h3::after {
+        background: $gradient-red-dark-theme;
+    }
+
+    p {
+        color: $text-secondary-dark-theme;
+    }
+
+    .project {
+        .tech-stack-btn {
+            background-color: $icon-bg-dark-theme;
+            box-shadow: $shadow-dark-theme;
+            color: $icon-text-dark-theme;
+            p {
+                color: $icon-text-dark-theme;
+            }
+        }
+    }
+
+    li {
+        color: $text-secondary-dark-theme;
+    }
+
+    .cta-page {
+        background: $gradient-red-dark-theme;
+        box-shadow: $shadow-dark-theme;
+        color: #eee;
+    }
+
+    .cta-code {
+        box-shadow: $shadow-dark-theme; 
+        border: 1px solid $text-secondary-dark-theme;
+        color: $text-secondary-dark-theme;
+    }
+
+    .cta-code:hover {
+        background-color: $text-secondary-dark-theme;
+        color: $primary-dark-theme;
+    }
+}
+
+.projects.light {
+    background: $background-gradient-light-theme;
+
+    h3, h4 {
+        color: $text-primary-light-theme;
+    }
+
+    h3::after {
+        background: $gradient-red-light-theme;
+    }
+
+    p {
+        color: $text-secondary-light-theme;
+    }
+
+    .project {
+        .tech-stack-btn {
+            background-color: $icon-bg-light-theme;
+            box-shadow: $shadow-light-theme;
+            color: $icon-text-light-theme;
+            p {
+                color: $icon-text-light-theme;
+            }
+        }
+    }
+
+    li {
+        color: $text-secondary-light-theme;
+    }
+
+    .cta-page {
+        background: $gradient-red-light-theme;
+        box-shadow: $shadow-light-theme;
+        color: #eee;
+    }
+
+    .cta-code {
+        box-shadow: $shadow-light-theme; 
+        border: 1px solid $text-secondary-light-theme;
+        color: $text-secondary-light-theme;
+    }
+
+    .cta-code:hover {
+        background-color: $text-secondary-light-theme;
+        color: $primary-light-theme;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .projects {
+        .project {
+            flex-direction: row;
+        }
+    }
+}

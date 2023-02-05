@@ -1,8 +1,8 @@
 import React, { useContext } from 'react'
 import { ThemeContext } from '../context/ThemeContext'
 import '../styles/skills.scss'
-import { faReact, faSquareJs, faHtml5, faCss3, faGitAlt, faGithub, faFigma, faSass } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faReact, faSquareJs, faHtml5, faCss3, faGitAlt, faGithub, faFigma, faSass } from '@fortawesome/free-brands-svg-icons'
 
 function Skills() {
   const {theme} = useContext(ThemeContext);
