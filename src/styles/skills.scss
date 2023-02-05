@@ -1,0 +1,67 @@
+@use './colors.scss' as *;
+
+.skills {
+    width: 100%;
+    padding: 4.5rem 10vw;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h3 {
+        font-size: 26px;
+        font-weight: 400;
+        position: relative;
+        margin-bottom: 5rem;
+    }
+
+    h3::after {
+        content: '';
+        position: absolute;
+        width: 80%;
+        height: 4px;
+        bottom: -5px;
+        left: 10%;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    .bolder {
+        font-size: 20px;
+        font-weight: 500;
+    }
+}
+
+.skills.dark {
+    background: $background-gradient-dark-theme;
+
+    h3 {
+        color: $text-primary-dark-theme;
+    }
+
+    h3::after {
+        background: $gradient-red-dark-theme;
+    }
+
+    p {
+        color: $text-secondary-dark-theme;
+    }
+}
+
+.skills.light {
+    background: $background-gradient-light-theme;
+
+    h3 {
+        color: $text-primary-light-theme;
+    }
+
+    h3::after {
+        background: $gradient-red-light-theme;
+    }
+
+    p {
+        color: $text-secondary-light-theme;
+    }
+}

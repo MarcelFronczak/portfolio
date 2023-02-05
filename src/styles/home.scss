@@ -1,6 +1,6 @@
 @use './colors.scss' as *;
 
-section {
+.home {
     height: 100vh;
     width: 100%;
     padding: 10rem 10vw;
@@ -34,7 +34,7 @@ section {
         white-space: nowrap;
     }
 
-    span {
+    .h-span {
         font-size: 40px;
     }
 
@@ -73,14 +73,14 @@ section {
     }
 }
 
-section.dark {
+.home.dark {
     background: $background-gradient-dark-theme;
 
     h1 {
         color: $text-primary-dark-theme;
     }
 
-    span {
+    .h-span {
         background: -webkit-linear-gradient(66deg, #C20E0E 0%, #E04B1C 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -118,14 +118,14 @@ section.dark {
     }
 }
 
-section.light {
+.home.light {
     background: $background-gradient-light-theme;
 
     h1 {
         color: $text-primary-light-theme;
     }
 
-    span {
+    .h-span {
         background: -webkit-linear-gradient(66deg, #CA0D0D 0%, #F55F30 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -181,7 +181,7 @@ section.light {
         font-size: 36px !important;
     }
 
-    span {
+    .h-span {
         font-size: 46px !important;
     }
 }
