@@ -143,11 +143,13 @@
         padding: 10px 14px;
         font-size: 18px;
         transition: all 0.2s;
+        white-space: nowrap;
 
         P {
             font-family: 'Roboto Mono', monospace;
             font-weight: 400;
             transition: all 0.2s;
+            white-space: nowrap;
         }
     }
 }
