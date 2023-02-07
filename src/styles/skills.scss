@@ -10,7 +10,7 @@
     .content-wrap {
         display: grid;
         grid-template-columns: repeat(auto-fit,minmax(280px, 1fr));
-        gap: 3rem;
+        gap: 3.5rem;
     }
 
     .flex-wrap {
@@ -23,7 +23,7 @@
         flex-direction: row;
         flex-wrap: wrap;
         align-items: center;
-        gap: 14px;
+        gap: 20px;
         justify-content: flex-start;
     }
 
