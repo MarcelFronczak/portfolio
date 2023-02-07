@@ -117,11 +117,39 @@
             font-weight: 400;
             border-radius: 2px;
             text-align: center;
-            transition: all 0.15s;
+            transition: all 0.2s;
         }
 
         .cta-page:hover {
             opacity: 0.91;
+        }
+    }
+
+
+
+    .btn-cta-github {
+        display: block;
+        margin: 0.5rem auto 5rem;
+        border-radius: 14px;
+        text-decoration: none;
+        background: transparent;
+        transition: all 0.2s;
+    }
+
+    .btn-cta-github-content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        padding: 10px 14px;
+        font-size: 18px;
+        transition: all 0.2s;
+
+        P {
+            font-family: 'Roboto Mono', monospace;
+            font-weight: 400;
+            transition: all 0.2s;
         }
     }
 }
@@ -173,6 +201,30 @@
         background-color: $text-secondary-dark-theme;
         color: $primary-dark-theme;
     }
+
+    .btn-cta-github {
+        border: 1px solid #da4113;
+    }
+
+    .btn-cta-github-content {
+        color: #da4113;
+
+        p {
+            color: #da4113;
+        }
+    }
+
+    .btn-cta-github:hover {
+        background-color: #da4113;
+
+        .btn-cta-github-content {
+            color: white;
+    
+            p {
+                color: white;
+            }
+        }
+    }
 }
 
 .projects.light {
@@ -220,6 +272,30 @@
     .cta-code:hover {
         background-color: $text-secondary-light-theme;
         color: $primary-light-theme;
+    }
+
+    .btn-cta-github {
+        border: 1px solid #e04311;
+    }
+    
+    .btn-cta-github-content {
+        color: #e04311;
+
+        p {
+            color: #e04311;
+        }
+    }
+
+    .btn-cta-github:hover {
+        background-color: #e04311;
+
+        .btn-cta-github-content {
+            color: white;
+    
+            p {
+                color: white;
+            }
+        }
     }
 }
 
