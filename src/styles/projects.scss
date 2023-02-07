@@ -216,6 +216,8 @@
 
     .btn-cta-github:hover {
         background-color: #da4113;
+        box-shadow: $shadow-dark-theme;
+        transform: scale(1.03);
 
         .btn-cta-github-content {
             color: white;
@@ -288,6 +290,8 @@
 
     .btn-cta-github:hover {
         background-color: #e04311;
+        box-shadow: $shadow-light-theme;
+        transform: scale(1.03);
 
         .btn-cta-github-content {
             color: white;

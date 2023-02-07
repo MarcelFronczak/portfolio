@@ -155,7 +155,7 @@ function Projects() {
         <a target="_blank" href="https://github.com/MarcelFronczak?tab=repositories" className="btn-cta-github">
           <div className="btn-cta-github-content">
             <p>See more on GitHub</p>
-            <FontAwesomeIcon icon={faGithub} />
+            <FontAwesomeIcon icon={faGithub} className="icon-github-cta"/>
           </div>
         </a>
 
