@@ -95,22 +95,28 @@
     .about {
         padding: 6rem 12vw;
 
+        .about-flex-container {
+            flex-direction: row;
+            gap: 5rem;
+    
+            .avatar-about {
+                min-width: 300px;
+            }
+        }
+
         p {
             font-size: 18px;
         }
     }
 
-    .about-flex-container {
-        flex-direction: row !important;
-
-        .avatar-about {
-            min-width: 300px;
-        }
-    }
 }
 
 @media screen and (min-width: 1600px) {
     .about {
         padding: 6rem 15vw;
+
+        .about-flex-container {
+            gap: 8rem;
+        }
     }
 }
