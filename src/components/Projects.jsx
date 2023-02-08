@@ -59,7 +59,7 @@ function Projects() {
           <div className="description">
             <p className='ul-label'>Functions to be added:</p>
             <ul>
-              <li>Firebase Realtime Databse to store saved offers</li>
+              <li>Firebase Realtime Database to store saved offers</li>
               <li>Category filter</li>
             </ul>
           </div>
