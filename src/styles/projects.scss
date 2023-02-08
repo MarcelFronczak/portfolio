@@ -119,7 +119,7 @@
         }
 
         .cta-page:hover {
-            opacity: 0.91;
+            // opacity: 0.91;
         }
     }
 
@@ -188,7 +188,11 @@
     .cta-page {
         background: $gradient-red-dark-theme;
         box-shadow: $shadow-dark-theme;
-        color: #eee;
+        color: #ececec;
+    }
+
+    .cta-page:hover {
+        filter:brightness(0.85);
     }
 
     .cta-code {
@@ -262,13 +266,17 @@
     .cta-page {
         background: $gradient-red-light-theme;
         box-shadow: $shadow-light-theme;
-        color: #eee;
+        color: #f0f0f0;
+    }
+
+    .cta-page:hover {
+        filter:brightness(0.92);
     }
 
     .cta-code {
         box-shadow: $shadow-light-theme; 
         border: 1px solid $text-secondary-light-theme;
-        color: $text-secondary-light-theme;
+        color: 1px 1px 20px -5px rgb(207, 207, 207);
     }
 
     .cta-code:hover {
