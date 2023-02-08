@@ -20,14 +20,14 @@ function Navbar() {
           <li><Link to="home" spy={true} smooth={true} offset={0} duration={400} onClick={() => setOpenMenu(false)}>HOME</Link></li>
           <li><Link to="skills" spy={true} smooth={true} offset={-50} duration={400} onClick={() => setOpenMenu(false)}>SKILLS</Link></li>
           <li><Link to="projects" spy={true} smooth={true} offset={-50} duration={400} onClick={() => setOpenMenu(false)}>PROJECTS</Link></li>
-          <li><Link to="" spy={true} smooth={true} offset={-50} duration={400} onClick={() => setOpenMenu(false)}>ABOUT</Link></li>
+          <li><Link to="about" spy={true} smooth={true} offset={-50} duration={400} onClick={() => setOpenMenu(false)}>ABOUT</Link></li>
           <li><Link to="" spy={true} smooth={true} offset={-50} duration={400} onClick={() => setOpenMenu(false)}>CONTACT</Link></li>
         </ul>
         <ul className='menu-web'>
           <li><Link to="home" spy={true} smooth={true} offset={0} duration={500}>HOME</Link></li>
           <li><Link to="skills" spy={true} smooth={true} offset={-50} duration={400}>SKILLS</Link></li>
           <li><Link to="projects" spy={true} smooth={true} offset={-50} duration={500}>PROJECTS</Link></li>
-          <li><Link to="" spy={true} smooth={true} offset={-50} duration={500}>ABOUT</Link></li>
+          <li><Link to="about" spy={true} smooth={true} offset={-50} duration={500}>ABOUT</Link></li>
           <li><Link to="" spy={true} smooth={true} offset={-50} duration={500}>CONTACT</Link></li>
         </ul>
         <span className='toggle-btn' >
