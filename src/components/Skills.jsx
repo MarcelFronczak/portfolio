@@ -3,6 +3,7 @@ import { ThemeContext } from '../context/ThemeContext'
 import '../styles/skills.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faReact, faSquareJs, faHtml5, faCss3, faGitAlt, faGithub, faFigma, faSass } from '@fortawesome/free-brands-svg-icons'
+import { SiTailwindcss } from "react-icons/si"
 
 function Skills() {
   const {theme} = useContext(ThemeContext);
@@ -41,6 +42,12 @@ function Skills() {
               <div className='tech-stack-content'>
                 <p>Sass</p>
                 <FontAwesomeIcon icon={faSass} />
+              </div>
+            </div>
+            <div className='tech-stack-btn'>
+              <div className='tech-stack-content'>
+                <p>Tailwind</p>
+                <SiTailwindcss />
               </div>
             </div>
             <div className='tech-stack-btn'>
