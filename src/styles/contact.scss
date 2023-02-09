@@ -30,7 +30,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
-        min-width: 100%;
+        width: 100%;
         gap: 2rem;
 
         .contact-col-1,
@@ -92,13 +92,18 @@
                 width: 100%;
                 align-items: center;
 
-
-                .social-icon {
-                    width: 22px;
-                    height: 22px;
-                    padding: 10px;
+                .icon-box {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 36px;
+                    height: 36px;
                     border-radius: 50%;
                     margin-right: 10px;
+                }
+
+                .social-icon {
+                    font-size: medium;
                 }
 
                 a {
@@ -107,7 +112,7 @@
             }
 
             .contact-item:not(:last-child) {
-                margin-bottom: 1rem;
+                margin-bottom: 1.5rem;
             }
 
             .contact-text {
@@ -162,7 +167,7 @@
             color: $text-secondary-dark-theme;
         }
     
-        .social-icon {
+        .icon-box {
             background-color: $icon-bg-dark-theme;
             color: $icon-text-dark-theme;
         }
@@ -218,7 +223,7 @@
             color: $text-secondary-light-theme;
         }
     
-        .social-icon {
+        .icon-box {
             background-color: $icon-bg-light-theme;
             color: $icon-text-light-theme;
         }
@@ -234,23 +239,11 @@
 @media screen and (min-width: 900px) {
     .contact {
         .contact-flex-container {
-            display: flex;
             flex-direction: row;
-            justify-content: center;
-            align-items: flex-start;
-            min-width: 100%;
+            align-items: center;
+            max-width: 1200px !important;
             gap: 3.5rem;
-    
-            .contact-col-1,
-            .contact-col-2 {
-                display: flex;
-                justify-content: flex-start;
-                align-items: center;
-                flex: 1;
-                width: 100%;
-            }
+
         }
-
     }
-
 }
