@@ -1,0 +1,223 @@
+@use './colors.scss' as *;
+
+.contact {
+    width: 100%;
+    padding: 6rem 10vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    h3 {
+        font-size: 26px;
+        font-weight: 400;
+        position: relative;
+        margin-bottom: 5rem;
+    }
+
+    h3::after {
+        content: '';
+        position: absolute;
+        width: 80%;
+        height: 4px;
+        bottom: -5px;
+        left: 10%;
+    }
+
+    .contact-flex-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        min-width: 100%;
+        gap: 2rem;
+
+        .contact-col-1,
+        .contact-col-2 {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex: 1;
+            min-width: 100%;
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 100%;
+            padding: 2rem;
+            border-radius: 20px;
+
+            h4 {
+                margin: 0 auto 1.5rem;
+                font-size: 18px;
+                font-weight: 400;
+            }
+
+            input {
+                margin-bottom: 1.5rem;
+                padding: 16px 12px;
+                border: none;
+                border-radius: 6px;
+                font-family: 'Poppins', sans-serif;
+                font-size: 14px;
+            }
+
+            input:nth-last-child(2) {
+                height: 70px;
+            }
+
+            button {
+                padding: 15px 12px;
+                border-radius: 6px;
+                cursor: pointer;
+                border: none;
+                font-family: 'Roboto Mono', monospace;
+                font-weight: 400;
+                font-size: 16px;
+            }
+        }
+
+        .contact-items {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 100%;
+            padding: 2rem;
+
+            .contact-item {
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                align-items: center;
+
+
+                .social-icon {
+                    width: 22px;
+                    height: 22px;
+                    padding: 12px;
+                    border-radius: 50%;
+                    margin-right: 10px;
+                }
+
+                a {
+                    cursor: pointer;
+                }
+            }
+
+            .contact-item:not(:last-child) {
+                margin-bottom: 1rem;
+            }
+
+            .contact-text {
+                font-family: 'Roboto Mono', monospace;
+            }
+        }
+    }
+
+
+}
+
+.contact.dark {
+    background: $background-gradient-dark-theme;
+
+    h3 {
+        color: $text-primary-dark-theme;
+    }
+
+    h3::after {
+        background: $gradient-red-dark-theme;
+    }
+
+    .contact-flex-container {
+
+        .form {
+            background-color: $icon-bg-dark-theme;
+            box-shadow: 0 0 20px -6px #2a2a2a;
+        }
+
+        h4 {
+            color: $text-primary-dark-theme;
+        }
+
+        input {
+            background-color: $icon-bg-dark-theme;
+            box-shadow: $shadow-dark-theme;
+            color: $text-primary-dark-theme;
+        }
+
+        button {
+            background: $gradient-red-dark-theme;
+            color: #fff;
+            box-shadow: $shadow-dark-theme;
+        }
+    
+        p, a {
+            color: $text-secondary-dark-theme;
+        }
+    
+        .social-icon {
+            background-color: $icon-bg-dark-theme;
+            color: $icon-text-dark-theme;
+        }
+    
+        .contact-item:hover {
+            .social-icon, .contact-text {
+                color: $accent-red-dark-theme;
+            }
+        }
+    }
+}
+
+.contact.light {
+    background: $background-gradient-light-theme;
+
+    h3 {
+        color: $text-primary-light-theme;
+    }
+
+    h3::after {
+        background: $gradient-red-light-theme;
+    }
+
+    .contact-flex-container {
+
+        .form {
+            background-color: $icon-bg-light-theme;
+            box-shadow: 0 0 20px -6px #ccc;
+        }
+
+        h4 {
+            color: $text-primary-light-theme;
+        }
+
+        input {
+            background-color: $icon-bg-light-theme;
+            box-shadow: $shadow-light-theme;
+            color: $text-primary-light-theme;
+        }
+
+        button {
+            background: $gradient-red-light-theme;
+            color: #fff;
+            box-shadow: $shadow-light-theme;
+        }
+    
+        p, a {
+            color: $text-secondary-light-theme;
+        }
+    
+        .social-icon {
+            background-color: $icon-bg-light-theme;
+            color: $icon-text-light-theme;
+        }
+    
+        .contact-item:hover {
+            .social-icon, .contact-text {
+                color: $accent-red-light-theme;
+            }
+        }
+    }
+}
