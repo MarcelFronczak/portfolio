@@ -143,8 +143,13 @@
 
         input {
             background-color: $icon-bg-dark-theme;
-            box-shadow: $shadow-dark-theme;
             color: $text-primary-dark-theme;
+
+            -webkit-box-shadow: $shadow-dark-theme;
+            -moz-box-shadow: $shadow-dark-theme;
+            -ms-box-shadow: $shadow-dark-theme;
+            -o-box-shadow: $shadow-dark-theme;
+            box-shadow: $shadow-dark-theme;
         }
 
         button {
@@ -194,8 +199,13 @@
 
         input {
             background-color: $icon-bg-light-theme;
-            box-shadow: $shadow-light-theme;
             color: $text-primary-light-theme;
+
+            -webkit-box-shadow: $shadow-light-theme;
+            -moz-box-shadow: $shadow-light-theme;
+            -ms-box-shadow: $shadow-light-theme;
+            -o-box-shadow: $shadow-light-theme;
+            box-shadow: $shadow-light-theme;
         }
 
         button {
