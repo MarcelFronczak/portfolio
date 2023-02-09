@@ -35,23 +35,20 @@ function Contact() {
             </li>
             <li className="contact-item">
               <div className="icon-box">
-              <FontAwesomeIcon icon={faEnvelope} className='social-icon' />
+                <FontAwesomeIcon icon={faEnvelope} className='social-icon' />
               </div>
-
               <p className='contact-text' >marcel.fronczak@gmail.com</p>
             </li>
             <li className="contact-item">
-            <div className="icon-box">
-            <FontAwesomeIcon icon={faLinkedinIn} className='social-icon' />          
-                </div>
-
+              <div className="icon-box">
+                <FontAwesomeIcon icon={faLinkedinIn} className='social-icon' />          
+              </div>
               <a className='contact-text' >LinkedIn</a>
             </li>
             <li className="contact-item">
-            <div className="icon-box">
-            <FontAwesomeIcon icon={faGithub} className='social-icon' />       
-                </div>
-
+              <div className="icon-box">
+                <FontAwesomeIcon icon={faGithub} className='social-icon' />       
+              </div>
               <a className='contact-text' >GitHub</a>
             </li>
           </ul>

@@ -31,6 +31,7 @@
         justify-content: center;
         align-items: flex-start;
         width: 100%;
+        max-width: 490px;
         gap: 2rem;
 
         .contact-col-1,
@@ -48,6 +49,7 @@
             justify-content: space-between;
             width: 100%;
             padding: 2rem;
+            border-radius: 12px;
 
             h4 {
                 margin: 0 auto 1.5rem;
@@ -84,7 +86,7 @@
             flex-direction: column;
             justify-content: space-between;
             width: 100%;
-            padding: 2rem;
+            padding: 2rem 0;
 
             .contact-item {
                 display: flex;
@@ -244,6 +246,9 @@
             max-width: 1200px !important;
             gap: 3.5rem;
 
+            .contact-items {
+                padding: 2rem;
+            }
         }
     }
 }
