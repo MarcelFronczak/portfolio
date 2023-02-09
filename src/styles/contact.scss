@@ -174,6 +174,7 @@
         .icon-box {
             background-color: $icon-bg-dark-theme;
             color: $icon-text-dark-theme;
+            box-shadow: 0 0 20px -6px #2a2a2a;
         }
     
         .contact-item:hover {
@@ -230,6 +231,7 @@
         .icon-box {
             background-color: $icon-bg-light-theme;
             color: $icon-text-light-theme;
+            box-shadow: 0 0 20px -6px #ccc;
         }
     
         .contact-item:hover {
