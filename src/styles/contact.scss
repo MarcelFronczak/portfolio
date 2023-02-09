@@ -39,7 +39,7 @@
             justify-content: flex-start;
             align-items: center;
             flex: 1;
-            min-width: 100%;
+            width: 100%;
         }
 
         .form {
@@ -48,7 +48,6 @@
             justify-content: space-between;
             width: 100%;
             padding: 2rem;
-            border-radius: 20px;
 
             h4 {
                 margin: 0 auto 1.5rem;
@@ -97,7 +96,7 @@
                 .social-icon {
                     width: 22px;
                     height: 22px;
-                    padding: 12px;
+                    padding: 10px;
                     border-radius: 50%;
                     margin-right: 10px;
                 }
@@ -220,4 +219,28 @@
             }
         }
     }
+}
+
+@media screen and (min-width: 900px) {
+    .contact {
+        .contact-flex-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-start;
+            min-width: 100%;
+            gap: 3.5rem;
+    
+            .contact-col-1,
+            .contact-col-2 {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                flex: 1;
+                width: 100%;
+            }
+        }
+
+    }
+
 }
