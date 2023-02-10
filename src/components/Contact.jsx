@@ -43,13 +43,13 @@ function Contact() {
               <div className="icon-box">
                 <FontAwesomeIcon icon={faLinkedinIn} className='social-icon' />          
               </div>
-              <a className='contact-text' >LinkedIn</a>
+              <a target='_blank' href='https://www.linkedin.com/in/marcel-fronczak-88523022b/' className='contact-text' >LinkedIn</a>
             </li>
             <li className="contact-item">
               <div className="icon-box">
                 <FontAwesomeIcon icon={faGithub} className='social-icon' />       
               </div>
-              <a className='contact-text' >GitHub</a>
+              <a target='_blank' href='https://github.com/MarcelFronczak' className='contact-text' >GitHub</a>
             </li>
           </ul>
         </div>
