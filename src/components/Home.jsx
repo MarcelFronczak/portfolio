@@ -23,7 +23,7 @@ function Home() {
               </a>
             </div>
           </div>
-          {theme === 'dark' ? <img src={AvatarDark} alt='profile image avatar' /> : <img src={AvatarLight} alt='profile image avatar' />}
+          {theme === 'dark' ? <img src={AvatarDark} alt='profile avatar' /> : <img src={AvatarLight} alt='profile avatar' />}
         </div>
     </section>
   )

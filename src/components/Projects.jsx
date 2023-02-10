@@ -19,7 +19,7 @@ function Projects() {
 
       <div className='project project-1'>
         <div className="col col1">
-          {theme === 'dark' ? <img src={Project1Dark} alt="image of first project" /> : <img src={Project1Light} alt="image of first project" />}
+          {theme === 'dark' ? <img src={Project1Dark} alt="first project" /> : <img src={Project1Light} alt="first project" />}
         </div>
         <div className="col col2">
 
@@ -65,15 +65,15 @@ function Projects() {
           </div>
           <div className='cta-buttons'>
 
-            <a target='_blank' href="https://marcelfronczak.github.io/job-offers-app/" className='cta-page'>Live Page</a>
-            <a target='_blank' href="https://github.com/MarcelFronczak/job-offers-app.git" className='cta-code'>Source Code</a>
+            <a target='_blank' rel="noreferrer" href="https://marcelfronczak.github.io/job-offers-app/" className='cta-page'>Live Page</a>
+            <a target='_blank' rel="noreferrer" href="https://github.com/MarcelFronczak/job-offers-app.git" className='cta-code'>Source Code</a>
           </div>
         </div>
       </div>
 
       <div className='project project-2'>
         <div className="col col1">
-          {theme === 'dark' ? <img src={Project2Dark} alt="image of second project" /> : <img src={Project2Light} alt="image of second project" />}
+          {theme === 'dark' ? <img src={Project2Dark} alt="second project" /> : <img src={Project2Light} alt="second project" />}
         </div>
         <div className="col col2">
 
@@ -108,15 +108,15 @@ function Projects() {
           </div>
           <div className='cta-buttons'>
 
-            <a target='_blank' href="https://marcelfronczak.github.io/barbershop-website/" className='cta-page'>Live Page</a>
-            <a target='_blank' href="https://github.com/MarcelFronczak/barbershop-website.git" className='cta-code'>Source Code</a>
+            <a target='_blank' rel="noreferrer" href="https://marcelfronczak.github.io/barbershop-website/" className='cta-page'>Live Page</a>
+            <a target='_blank' rel="noreferrer" href="https://github.com/MarcelFronczak/barbershop-website.git" className='cta-code'>Source Code</a>
           </div>
         </div>
       </div>
 
       <div className='project project-1'>
         <div className="col col1">
-          {theme === 'dark' ? <img src={Project3Dark} alt="image of third project" /> : <img src={Project3Light} alt="image of third project" />}
+          {theme === 'dark' ? <img src={Project3Dark} alt="third project" /> : <img src={Project3Light} alt="third project" />}
         </div>
         <div className="col col2">
 
@@ -146,8 +146,8 @@ function Projects() {
           </div>
           <div className='cta-buttons'>
 
-            <a target='_blank' href="https://marcelfronczak.github.io/portfolio/" className='cta-page'>Live Page</a>
-            <a target='_blank' href="https://github.com/MarcelFronczak/portfolio.git" className='cta-code'>Source Code</a>
+            <a target='_blank' rel="noreferrer" href="https://marcelfronczak.github.io/portfolio/" className='cta-page'>Live Page</a>
+            <a target='_blank' rel="noreferrer" href="https://github.com/MarcelFronczak/portfolio.git" className='cta-code'>Source Code</a>
           </div>
         </div>
       </div>

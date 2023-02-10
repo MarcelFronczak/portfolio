@@ -20,7 +20,7 @@ function About() {
           </p>
         </div>
         <div className="col-2-about">
-          {theme === 'dark' ? <img src={AvatarDark} className='avatar-about' alt="avatar image" /> : <img src={AvatarLight} className='avatar-about' alt="avatar image" /> }
+          {theme === 'dark' ? <img src={AvatarDark} className='avatar-about' alt="avatar" /> : <img src={AvatarLight} className='avatar-about' alt="avatar" /> }
         </div>
       </div>
     </section>

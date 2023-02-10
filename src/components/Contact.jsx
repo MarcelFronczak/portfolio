@@ -1,16 +1,60 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import { ThemeContext } from '../context/ThemeContext'
 import '../styles/contact.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faLinkedinIn, faGithub } from '@fortawesome/free-brands-svg-icons'
+import { send } from 'emailjs-com'
 
 function Contact() {
   const {theme} = useContext(ThemeContext);
+  const [status, setStatus] = useState('SEND');
+  const { REACT_APP_SERVICE_ID, REACT_APP_TEMPLATE_ID, REACT_APP_USER_ID } = process.env;
 
-  const handleSubmit = (e) => {
+  const [toSend, setToSend] = useState({
+    from_name: '',
+    reply_to: '',
+    message: '',
+  });
+
+  const handleChange = (e) => {
+    setToSend({...toSend, [e.target.name]: e.target.value})
+  }
+
+  const handleSend = (e) => {
     e.preventDefault();
-    alert('Function to be added soon ;)')
+    setStatus('Sending...');
+    
+    send(
+      REACT_APP_SERVICE_ID,
+      REACT_APP_TEMPLATE_ID,
+      toSend,
+      REACT_APP_USER_ID
+    )
+    .then((response) => {
+      console.log("Message has been sent!", response.status, response.text);
+      setStatus('Sent successfully');
+      setTimeout(() => {
+        setStatus('SEND')
+      }, 2000)
+      setToSend({
+        from_name: '',
+        reply_to: '',
+        message: '',
+      })
+    })
+    .catch((err) => {
+      console.log("Error!", err);
+      setStatus('Try Again');
+      setTimeout(() => {
+        setStatus('SEND')
+      }, 2000)
+      setToSend({
+        from_name: '',
+        reply_to: '',
+        message: '',
+      })
+    });
   }
 
   return (
@@ -18,11 +62,12 @@ function Contact() {
       <h3>CONTACT</h3>
       <div className="contact-flex-container">
         <div className="contact-col-1">
-          <form className='form'>
+          <form className='form' autocomplete='off'>
             <h4>Send me an email</h4>
-            <input type="text" placeholder='Your Name' readOnly required />
-            <input type="text" placeholder='Your message...' readOnly required />
-            <button onClick={handleSubmit} type=''>SEND</button>
+            <input type="text" name='from_name' value={toSend.from_name} onChange={handleChange} placeholder='Your Name' required />
+            <input type="email" name='reply_to' value={toSend.reply_to} onChange={handleChange} placeholder='Your Email' required />
+            <input type="text" name='message' value={toSend.message} onChange={handleChange} placeholder='Your Message...' required />
+            <button onClick={handleSend} type=''>{status}</button>
           </form>
         </div>
         <div className="contact-col-2">

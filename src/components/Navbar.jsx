@@ -1,8 +1,7 @@
 import React, { useContext, useState } from 'react'
 import { ThemeContext } from '../context/ThemeContext'
 import '../styles/navbar.scss'
-import * as Scroll from 'react-scroll';
-import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+import { Link, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBarsStaggered, faXmark, faMoon, faSun } from '@fortawesome/free-solid-svg-icons'
 
