@@ -115,7 +115,15 @@
             font-weight: 400;
             border-radius: 2px;
             text-align: center;
-            transition: all 0.2s;
+        }
+
+        .cta-page {
+            transition: filter 0.2s;
+        }
+
+        .cta-code {
+            transition: background-color 0.22s;
+            transition: color 0.18s;
         }
     }
 
@@ -270,9 +278,9 @@
     }
 
     .cta-code {
-        box-shadow: $shadow-light-theme; 
+        box-shadow: 1px 1px 20px -5px rgb(186, 186, 186);
         border: 1px solid $text-secondary-light-theme;
-        color: 1px 1px 20px -5px rgb(207, 207, 207);
+        color: $text-secondary-light-theme;
     }
 
     .cta-code:hover {
