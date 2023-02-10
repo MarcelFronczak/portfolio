@@ -66,6 +66,7 @@
                 font-size: 14px;
                 -webkit-appearance: none;
                 appearance: none;
+                outline: none;
             }
 
             input:nth-last-child(2) {
@@ -165,6 +166,10 @@
             box-shadow: $shadow-dark-theme;
         }
 
+        input:focus {
+            border: 1px solid $accent-red-dark-theme;
+        }
+
         button {
             background: $gradient-red-dark-theme;
             color: #fff;
@@ -221,6 +226,10 @@
             -ms-box-shadow: $shadow-light-theme;
             -o-box-shadow: $shadow-light-theme;
             box-shadow: $shadow-light-theme;
+        }
+
+        input:focus {
+            border: 1px solid $accent-red-light-theme;
         }
 
         button {

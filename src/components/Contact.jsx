@@ -23,38 +23,46 @@ function Contact() {
 
   const handleSend = (e) => {
     e.preventDefault();
-    setStatus('Sending...');
+
+    if(toSend.from_name !== '' && toSend.reply_to !== '' && toSend.message !== '') {
+      setStatus('Sending...');
     
-    send(
-      REACT_APP_SERVICE_ID,
-      REACT_APP_TEMPLATE_ID,
-      toSend,
-      REACT_APP_USER_ID
-    )
-    .then((response) => {
-      console.log("Message has been sent!", response.status, response.text);
-      setStatus('Sent successfully');
+      send(
+        REACT_APP_SERVICE_ID,
+        REACT_APP_TEMPLATE_ID,
+        toSend,
+        REACT_APP_USER_ID
+      )
+      .then((response) => {
+        console.log("Message has been sent!", response.status, response.text);
+        setStatus('Sent successfully');
+        setTimeout(() => {
+          setStatus('SEND')
+        }, 2500)
+        setToSend({
+          from_name: '',
+          reply_to: '',
+          message: '',
+        })
+      })
+      .catch((err) => {
+        console.log("Error!", err);
+        setStatus('Try Again');
+        setTimeout(() => {
+          setStatus('SEND')
+        }, 2000)
+        setToSend({
+          from_name: '',
+          reply_to: '',
+          message: '',
+        })
+      });
+    } else {
+      setStatus('Fill all fields');
       setTimeout(() => {
         setStatus('SEND')
       }, 2000)
-      setToSend({
-        from_name: '',
-        reply_to: '',
-        message: '',
-      })
-    })
-    .catch((err) => {
-      console.log("Error!", err);
-      setStatus('Try Again');
-      setTimeout(() => {
-        setStatus('SEND')
-      }, 2000)
-      setToSend({
-        from_name: '',
-        reply_to: '',
-        message: '',
-      })
-    });
+    }
   }
 
   return (
@@ -62,12 +70,12 @@ function Contact() {
       <h3>CONTACT</h3>
       <div className="contact-flex-container">
         <div className="contact-col-1">
-          <form className='form' autocomplete='off'>
+          <form className='form' action='submit' autoComplete='off'>
             <h4>Send me an email</h4>
             <input type="text" name='from_name' value={toSend.from_name} onChange={handleChange} placeholder='Your Name' required />
             <input type="email" name='reply_to' value={toSend.reply_to} onChange={handleChange} placeholder='Your Email' required />
             <input type="text" name='message' value={toSend.message} onChange={handleChange} placeholder='Your Message...' required />
-            <button onClick={handleSend} type=''>{status}</button>
+            <button onClick={handleSend} type='submit'>{status}</button>
           </form>
         </div>
         <div className="contact-col-2">
