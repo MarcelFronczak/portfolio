@@ -73,6 +73,8 @@
             }
 
             button {
+                -webkit-appearance: none;
+                appearance: none;
                 padding: 15px 12px;
                 border-radius: 6px;
                 cursor: pointer;
@@ -80,6 +82,7 @@
                 font-family: 'Roboto Mono', monospace;
                 font-weight: 400;
                 font-size: 16px;
+                text-decoration: none;
             }
         }
 
@@ -89,6 +92,7 @@
             justify-content: space-between;
             width: 100%;
             padding: 2rem 0;
+            list-style: none;
 
             .contact-item {
                 display: flex;
@@ -153,6 +157,7 @@
         input {
             background-color: $icon-bg-dark-theme;
             color: $text-primary-dark-theme;
+            caret-color: $accent-red-dark-theme;
 
             -webkit-box-shadow: $shadow-dark-theme;
             -moz-box-shadow: $shadow-dark-theme;
@@ -210,6 +215,7 @@
         input {
             background-color: $icon-bg-light-theme;
             color: $text-primary-light-theme;
+            caret-color: $accent-red-light-theme;
 
             -webkit-box-shadow: $shadow-light-theme;
             -moz-box-shadow: $shadow-light-theme;
