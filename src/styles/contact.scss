@@ -114,8 +114,10 @@
                     font-size: medium;
                 }
 
-                a {
+                .contact-text {
                     cursor: pointer;
+                    font-family: 'Roboto Mono', monospace;
+                    text-decoration: none;
                 }
             }
 
@@ -123,10 +125,6 @@
                 margin-bottom: 1.5rem;
             }
 
-            .contact-text {
-                font-family: 'Roboto Mono', monospace;
-                text-decoration: none;
-            }
         }
     }
 
