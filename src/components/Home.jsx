@@ -4,6 +4,7 @@ import '../styles/home.scss'
 import resume from '../assets/M-Fronczak-CV.pdf'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFileArrowDown } from '@fortawesome/free-solid-svg-icons'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import AvatarDark from '../assets/Avatar-dark.jpg'
 import AvatarLight from '../assets/Avatar-light.jpg'
 
@@ -16,10 +17,18 @@ function Home() {
             <h1>Hi, I'm</h1>
             <h1 className='name'><span className='h-span'>Marcel Fronczak</span></h1>
             <p>Junior Frontend Developer</p>
-            <div className='gradient-wrap'>
-              <a href={resume} download='M-Fronczak-CV.pdf' className='resume-btn'>
-                Resume
-                <FontAwesomeIcon icon={faFileArrowDown} className='file-icon'/>
+            <div className='cta-buttons'>
+            <a target="_blank" rel="noreferrer" href="https://github.com/MarcelFronczak" className="cta cta-gh">
+                <div className="cta-gh-items">
+                  <p>GitHub</p>
+                  <FontAwesomeIcon icon={faGithub}/>
+                </div>
+              </a>
+              <a href={resume} download='M-Fronczak-CV.pdf' className='cta cta-cv'>
+                <div className="cta-cv-items">
+                  <p>Resume</p>
+                  <FontAwesomeIcon icon={faFileArrowDown} id="file-icon"/>
+                </div>
               </a>
             </div>
           </div>

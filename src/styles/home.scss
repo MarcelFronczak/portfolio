@@ -47,33 +47,39 @@
         font-weight: 400;
     }
 
-    .gradient-wrap {
-        width: 106px;
-        height: 40px;
-        padding: 1px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 2px;
+    .cta-buttons {
         margin-top: 1.5rem;
-    }
-
-    .resume-btn {
-        height: 100%;
-        width: 100%;
-        text-align: center;
         display: flex;
-        justify-content: center;
-        align-items: center;
-        text-decoration: none;
-        line-height: 8px;
-        gap: 6px;
-        transition: all 0.17s ease;
-    }
+        gap: 1rem;
 
-    .file-icon {
-        opacity: 0.85;
-        transition: all 0.17s ease;
+        .cta {
+            text-decoration: none;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.2s;
+
+            .cta-cv-items,
+            .cta-gh-items {
+                border-radius: 12px;
+                padding: 8px 12px;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 8px;
+                // transition: all 0.2s;
+
+                p {
+                    font-size: 16px;
+                    font-family: 'Roboto Mono', monospace;
+                }
+            }
+        }
+
+        .cta-gh:hover {
+            filter: brightness(0.85);
+        }
     }
 }
 
@@ -94,31 +100,38 @@
         color: $text-secondary-dark-theme;
     }
 
-    .gradient-wrap {
-        background: $gradient-red-dark-theme;
-    }
-
-    .resume-btn {
-        background: $background-gradient-dark-theme;
-        color: $accent-red-dark-theme;
-
-    }
-
-    .file-icon {
-        color: #E04B1C;
-    }
-
-    .resume-btn:hover {
-        background: transparent;
-        color: #ccc;
-        .file-icon {
-            color: #ccc;
-            opacity: 1;
-        }
-    }
-
     img {
         box-shadow: $shadow-dark-theme;
+    }
+
+    .cta-buttons {
+        .cta-gh {
+            background-color: #da4113;
+            .cta-gh-items {
+                color: white;
+                p {
+                    color: white;
+                }
+            }
+        }
+
+        .cta-cv {
+            background-color: transparent;
+            .cta-cv-items {
+                outline: 1px solid #da4113;
+                color: #da4113;
+                p {
+                    color: #da4113;
+                }
+            }
+        }
+
+        .cta-cv:hover {
+            background-color: #92391e20;  
+            .cta-cv-items {
+                outline: 2px solid #da4113; 
+            }
+        }
     }
 }
 
@@ -139,30 +152,39 @@
         color: $text-secondary-light-theme;
     }
 
-    .gradient-wrap {
-        background: $gradient-red-light-theme;
-    }
-
-    .resume-btn {
-        background: $background-gradient-light-theme;
-        color: $accent-red-light-theme;
-    }
-
-    .file-icon {
-        color: #F55F30;
-    }
-
-    .resume-btn:hover {
-        background: transparent;
-        color: #dfdfdf;
-        .file-icon {
-            color: #dfdfdf;
-            opacity: 1;
-        }
-    }
 
     img {
         box-shadow: $shadow-light-theme;
+    }
+
+    .cta-buttons {
+        .cta-gh {
+            background-color: #e04311;
+            .cta-gh-items {
+                color: white;
+                p {
+                    color: white;
+                }
+            }
+        }
+
+        .cta-cv {
+            background-color: transparent;
+            .cta-cv-items {
+                outline: 1px solid #e04311;
+                color: #e04311;
+                p {
+                    color: #e04311;
+                }
+            }
+        }
+
+        .cta-cv:hover {
+            background-color: #d86d4d1e;  
+            .cta-cv-items {
+                outline: 2px solid #e04311; 
+            }
+        }
     }
 }
 
