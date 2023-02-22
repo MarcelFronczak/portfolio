@@ -1,4 +1,4 @@
-Portfolio Website (in progress)
+Portfolio Website
 
 Tech stack: React, SCSS
 
