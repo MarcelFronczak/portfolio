@@ -48,29 +48,24 @@
     }
 
     .cta-buttons {
-        margin-top: 1.5rem;
+        margin-top: 1.75rem;
         display: flex;
         gap: 1rem;
 
         .cta {
             text-decoration: none;
+
             border-radius: 12px;
             cursor: pointer;
-            transform: translateZ(0);
             transition: all 0.2s;
 
             .cta-cv-items,
             .cta-gh-items {
-                border-radius: 12px;
                 padding: 8px 12px;
-                width: 100%;
-                height: 100%;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 gap: 8px;
-                transform: translateZ(0);
-                // transition: all 0.2s;
 
                 p {
                     font-size: 16px;
@@ -119,8 +114,8 @@
 
         .cta-cv {
             background-color: transparent;
+            border: 1px solid #da4113;
             .cta-cv-items {
-                outline: 1px solid #da4113;
                 color: #da4113;
                 p {
                     color: #da4113;
@@ -129,10 +124,7 @@
         }
 
         .cta-cv:hover {
-            background-color: #92391e20;  
-            .cta-cv-items {
-                outline: 2px solid #da4113; 
-            }
+            background-color: #92391e22;  
         }
     }
 }
@@ -172,8 +164,8 @@
 
         .cta-cv {
             background-color: transparent;
+            border: 1px solid #e04311;
             .cta-cv-items {
-                outline: 1px solid #e04311;
                 color: #e04311;
                 p {
                     color: #e04311;
@@ -183,9 +175,6 @@
 
         .cta-cv:hover {
             background-color: #d86d4d1e;  
-            .cta-cv-items {
-                outline: 2px solid #e04311; 
-            }
         }
     }
 }
