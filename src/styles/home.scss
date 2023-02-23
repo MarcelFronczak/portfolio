@@ -56,6 +56,7 @@
             text-decoration: none;
             border-radius: 12px;
             cursor: pointer;
+            transform: translateZ(0);
             transition: all 0.2s;
 
             .cta-cv-items,
@@ -68,6 +69,7 @@
                 align-items: center;
                 justify-content: center;
                 gap: 8px;
+                transform: translateZ(0);
                 // transition: all 0.2s;
 
                 p {
