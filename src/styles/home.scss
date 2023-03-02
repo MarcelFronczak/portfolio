@@ -90,6 +90,7 @@
     .h-span {
         background: -webkit-linear-gradient(66deg, #C20E0E 0%, #E04B1C 100%);
         -webkit-background-clip: text;
+        background-clip: text;
         -webkit-text-fill-color: transparent;
     }
 
@@ -139,6 +140,7 @@
     .h-span {
         background: -webkit-linear-gradient(66deg, #CA0D0D 0%, #F55F30 100%);
         -webkit-background-clip: text;
+        background-clip: text;
         -webkit-text-fill-color: transparent;
     }
 
