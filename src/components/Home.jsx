@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import { ThemeContext } from '../context/ThemeContext'
 import '../styles/home.scss'
-import resume from '../assets/M-Fronczak-CV.pdf'
+import Resume from '../assets/CV-M_Fronczak.pdf'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFileArrowDown } from '@fortawesome/free-solid-svg-icons'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
@@ -24,7 +24,7 @@ function Home() {
                   <FontAwesomeIcon icon={faGithub}/>
                 </div>
               </a>
-              <a href={resume} download='M-Fronczak-CV.pdf' className='cta cta-cv'>
+              <a href={Resume} download='M-Fronczak-CV.pdf' className='cta cta-cv'>
                 <div className="cta-cv-items">
                   <p>Resume</p>
                   <FontAwesomeIcon icon={faFileArrowDown} id="file-icon"/>
