@@ -127,11 +127,9 @@
 
 @media screen and (min-width: 1150px) {
     .skills {
-        padding: 6rem 2vw 7rem !important;
+        padding: 6rem 18vw 9rem !important;
 
         .content-wrap {
-            display: grid;
-            grid-template-columns: repeat(auto-fit,minmax(345px, 1fr)) !important;
             gap: 5rem;
         }
     }

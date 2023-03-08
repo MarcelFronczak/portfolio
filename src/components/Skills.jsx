@@ -3,7 +3,7 @@ import { ThemeContext } from '../context/ThemeContext'
 import '../styles/skills.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faReact, faSquareJs, faHtml5, faCss3, faGitAlt, faGithub, faFigma, faSass } from '@fortawesome/free-brands-svg-icons'
-import { SiTailwindcss } from "react-icons/si"
+import { SiTailwindcss, SiTypescript } from "react-icons/si"
 
 function Skills() {
   const {theme} = useContext(ThemeContext);
@@ -11,7 +11,7 @@ function Skills() {
     <section className={'skills ' + theme} id='skills'>
       <h3>SKILLS</h3>
       <div className='content-wrap'>
-        <p>These are the main technologies I’ve been using over the last year.<br></br><br></br>In the near future I’m planning to learn <span className='bolder'>Typescript</span> and <span className='bolder'>Node.js</span>.</p>
+        <p>These are the main technologies I’ve been learning and using over the last year.<br></br><br></br>In the near future I’m planning to learn <span className='bolder'>Redux</span>, <span className='bolder'>Node.js</span> and <span className='bolder'>Next.js</span>.</p>
         <div className='flex-wrap'>
           <div className='tech-stack-container'>
             <div className='tech-stack-btn'>
@@ -22,8 +22,14 @@ function Skills() {
             </div>
             <div className='tech-stack-btn'>
               <div className='tech-stack-content'>
-                <p>JS</p>
+                <p>Javascript</p>
                 <FontAwesomeIcon icon={faSquareJs} />
+              </div>
+            </div>
+            <div className='tech-stack-btn'>
+              <div className='tech-stack-content'>
+                <p>Typescript</p>
+                <SiTypescript />
               </div>
             </div>
             <div className='tech-stack-btn'>
