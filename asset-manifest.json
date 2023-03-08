@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.dbcf9867.css",
-    "main.js": "/portfolio/static/js/main.1371da35.js",
+    "main.js": "/portfolio/static/js/main.7fd7da6e.js",
     "static/media/project-2-dark.png": "/portfolio/static/media/project-2-dark.616f60e2ec592b022247.png",
     "static/media/project-2-light.png": "/portfolio/static/media/project-2-light.bc3235d106506b9de9b5.png",
     "static/media/project-1-dark.png": "/portfolio/static/media/project-1-dark.ad2ba0d28f61740aa8b3.png",
     "static/media/project-1-light.png": "/portfolio/static/media/project-1-light.1613847702d109e3ec7d.png",
     "static/media/project-3-dark.png": "/portfolio/static/media/project-3-dark.fffa7512c3b63e92e8ff.png",
     "static/media/project-3-light.png": "/portfolio/static/media/project-3-light.f2f1bd00ba538e153631.png",
-    "static/media/CV-M_Fronczak.pdf": "/portfolio/static/media/CV-M_Fronczak.ae3ffa7d61f52fc3b956.pdf",
+    "static/media/CV-M_Fronczak.pdf": "/portfolio/static/media/CV-M_Fronczak.efc1b147fc75d85cf6ce.pdf",
     "static/media/Avatar-light.jpg": "/portfolio/static/media/Avatar-light.7674f609c516d699b22e.jpg",
     "static/media/Avatar-dark.jpg": "/portfolio/static/media/Avatar-dark.64e5c7e8ded5183963a0.jpg",
     "index.html": "/portfolio/index.html",
     "main.dbcf9867.css.map": "/portfolio/static/css/main.dbcf9867.css.map",
-    "main.1371da35.js.map": "/portfolio/static/js/main.1371da35.js.map"
+    "main.7fd7da6e.js.map": "/portfolio/static/js/main.7fd7da6e.js.map"
   },
   "entrypoints": [
     "static/css/main.dbcf9867.css",
-    "static/js/main.1371da35.js"
+    "static/js/main.7fd7da6e.js"
   ]
 }
